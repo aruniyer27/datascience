@@ -94,4 +94,4 @@ print(score)
 
 
 ## Strategy
-       Added dropout and batch normalization at every layer. Tried to optimize the learning rate, conu layer. Also set the bias to false on all convulutional layers
+Added dropout and batch normalization at every layer. Tried to optimize the learning rate, conu layer. Also set the bias to false on all convulutional layers
