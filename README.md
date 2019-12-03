@@ -1,3 +1,33 @@
+# EIP4 Assignment 3
+## Base Network Accuracy # 83.11
+
+Epoch 40/50
+390/390 [==============================] - 20s 52ms/step - loss: 0.3506 - acc: 0.8801 - val_loss: 0.5739 - val_acc: 0.8222
+Epoch 41/50
+390/390 [==============================] - 20s 51ms/step - loss: 0.3482 - acc: 0.8820 - val_loss: 0.5654 - val_acc: 0.8243
+Epoch 42/50
+390/390 [==============================] - 20s 51ms/step - loss: 0.3455 - acc: 0.8828 - val_loss: 0.5918 - val_acc: 0.8274
+Epoch 43/50
+390/390 [==============================] - 20s 52ms/step - loss: 0.3554 - acc: 0.8817 - val_loss: 0.5635 - val_acc: 0.8278
+Epoch 44/50
+390/390 [==============================] - 20s 51ms/step - loss: 0.3412 - acc: 0.8847 - val_loss: 0.5688 - val_acc: 0.8307
+Epoch 45/50
+390/390 [==============================] - 20s 51ms/step - loss: 0.3407 - acc: 0.8880 - val_loss: 0.5710 - val_acc: 0.8288
+Epoch 46/50
+390/390 [==============================] - 20s 51ms/step - loss: 0.3487 - acc: 0.8835 - val_loss: 0.5763 - val_acc: 0.8199
+Epoch 47/50
+390/390 [==============================] - 20s 51ms/step - loss: 0.3373 - acc: 0.8866 - val_loss: 0.5765 - val_acc: 0.8185
+Epoch 48/50
+390/390 [==============================] - 20s 52ms/step - loss: 0.3295 - acc: 0.8904 - val_loss: 0.5747 - val_acc: 0.8267
+Epoch 49/50
+390/390 [==============================] - 20s 52ms/step - loss: 0.3325 - acc: 0.8885 - val_loss: 0.5942 - val_acc: 0.8244
+Epoch 50/50
+390/390 [==============================] - 20s 52ms/step - loss: 0.3359 - acc: 0.8900 - val_loss: 0.5675 - val_acc: 0.8311
+Model took 1016.24 seconds to train
+
+Accuracy on test data is: 83.11
+
+
 # EIP4 Assignment 1
 print(score)
 
