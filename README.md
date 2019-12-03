@@ -80,7 +80,9 @@ model.summary()
 
 model.compile(optimizer=Adam(lr=.005), loss='categorical_crossentropy', metrics=['accuracy'])
 
-
+Total params: 105,891
+Trainable params: 104,395
+Non-trainable params: 1,496
 
 ## 50 Epochs Log - Highest Validation Accuracy - 83.71
 
