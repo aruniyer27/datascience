@@ -39,8 +39,8 @@ Model took 1016.24 seconds to train
 Accuracy on test data is: 83.11
 
 ## Model Definition
-from keras.layers 
 from keras.layers import Activation, Flatten, Dense, Dropout, SeparableConv2D, GlobalAveragePooling2D
+from keras.optimizers import Adam
 
 model = Sequential()
 
@@ -51,30 +51,36 @@ model.add(SeparableConv2D(64, 3, 3, border_mode='same', use_bias = False, kernel
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Dropout(0.11))
+model.add(Dropout(0.2))
 
 
 model.add(SeparableConv2D(128, 3, 3, border_mode='same', use_bias = False, kernel_initializer='he_uniform'))
 model.add(BatchNormalization())
 model.add(Activation('relu'))
-model.add(SeparableConv2D(128, 3, 3, border_mode='same', use_bias = False, kernel_initializer='he_uniform'))
+model.add(SeparableConv2D(178, 3, 3, border_mode='same', use_bias = False, kernel_initializer='he_uniform'))
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
-model.add(Dropout(0.15))
+model.add(Dropout(0.2))
 
 
-model.add(SeparableConv2D(128, 3, 3, border_mode='same', use_bias = False, kernel_initializer='he_uniform'))
+model.add(SeparableConv2D(178, 3, 3, border_mode='same', use_bias = False, kernel_initializer='he_uniform'))
 model.add(BatchNormalization())
 model.add(Activation('relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.22))
 
-model.add(SeparableConv2D(128, 1, 1, activation='relu', use_bias = False, kernel_initializer='he_uniform'))
+model.add(SeparableConv2D(168, 1, 1, activation='relu', use_bias = False, kernel_initializer='he_uniform'))
 model.add(BatchNormalization())
-model.add(SeparableConv2D(20, 4, use_bias = False))
+model.add(SeparableConv2D(10, 4, use_bias = False))
 model.add(GlobalAveragePooling2D())
 model.add(Activation('softmax'))
+
+model.summary()
+
+model.compile(optimizer=Adam(lr=.005), loss='categorical_crossentropy', metrics=['accuracy'])
+
+
 
 ## 50 Epochs Log - Highest Validation Accuracy - 82.60
 
