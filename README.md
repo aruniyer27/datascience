@@ -42,7 +42,6 @@ Accuracy on test data is: 83.11
 from keras.layers 
 from keras.layers import Activation, Flatten, Dense, Dropout, SeparableConv2D, GlobalAveragePooling2D
 
-# Define the model
 model = Sequential()
 
 model.add(SeparableConv2D(32, 3, 3, border_mode='same', input_shape=(32, 32, 3), use_bias = False, kernel_initializer='he_uniform'))
